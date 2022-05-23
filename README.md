@@ -1,3 +1,3 @@
 ## Basic C functions, variables...
 
-- compiler used : GCC
+- compiler used : [GCC](https://gcc.gnu.org/)
