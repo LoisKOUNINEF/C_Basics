@@ -1,0 +1,3 @@
+## Basic C functions, variables...
+
+- compiler used : GCC
