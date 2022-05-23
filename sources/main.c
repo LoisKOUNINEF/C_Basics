@@ -78,10 +78,10 @@ int main()
   char name[20];
     // indicate the maximum number of input inside the []
   printf("Enter your name: ");
-    // add a '\n' at the end of the string input
+    // automatically adds a '\n' at the end of the string input, but allows whitespaces
   fgets(name, 20, stdin);
-  // scanf("%s", name); ==> will only return string before space (i.e 'John Smith' will be 'John')
-    // doesnt need to write '&name' here
+  // scanf("%s", name); ==> will only return string before whitespace (i.e 'John Smith' will be 'John')
+  // doesnt need to write '&name' here
   printf("Your name is %s.\n", name);
 
   printf("Hello world.\n");
