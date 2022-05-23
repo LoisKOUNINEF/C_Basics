@@ -4,12 +4,16 @@
 
 int main()
 {
-  // dont forget ';' at the end of each instruction !
+
+// dont forget ';' at the end of each instruction !
+
   printf("   /|\n");
   printf("  / |\n");
   printf(" /  |\n");
   printf("/___|\n");
 
+
+// how to initiate and reuse constants and variables
   char characterName1 [] = "John";
   int characterAge1 = 35;
   char characterName2 [] = "Andrew";
@@ -26,6 +30,8 @@ int main()
   printf("Name %s was shorter than %s.\n", characterName1, characterName2);
   printf("Age %i was not the same as %i.\n", characterAge1, CHARACTER_AGE2);
 
+
+// data types
   int wholeNumber = 40;
   //  %i or %d (prefix i or d with 'l' to indicate long)
   // when doing maths with integers, get integer back. 5 / 4 = 1.
@@ -38,11 +44,45 @@ int main()
   // %s
   // indicate that variable will contain multiple characters with '[]'
 
+
+// math functions
   printf("%f\n", pow(4, 3) );
   printf("%f\n", sqrt(36) );
   printf("%f\n", ceil(36.6) );
   printf("%f\n", floor(36.6) );
   printf("%d\n", abs(36.6) );
+
+
+// user input
+  // number
+  int age;
+  printf("Enter your age: ");
+  scanf("%d", &age);
+  // '&' indicates input
+  printf("You are %d years old.\n", age);
+
+  // double
+  double decimal;
+  printf("enter your decimal: ");
+  scanf("%lf", &decimal);
+  printf("Your decimal is %f.\n", decimal);
+
+  // character
+  char letter;
+  printf("Enter your letter: ");
+  scanf("%c", &letter);
+  printf("Your letter is %c.\n", letter);
+    // problem here, not waiting for input
+
+  // string
+  char name[20];
+    // indicate the maximum number of input inside the []
+  printf("Enter your name: ");
+    // add a '\n' at the end of the string input
+  fgets(name, 20, stdin);
+  // scanf("%s", name); ==> will only return string before space (i.e 'John Smith' will be 'John')
+    // doesnt need to write '&name' here
+  printf("Your name is %s.\n", name);
 
   printf("Hello world.\n");
   // end with \n to prevent a '%' to be printed as well at the end.
