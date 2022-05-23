@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
@@ -31,6 +32,7 @@ int main()
   // %c
   char phrase [] = "A random sentence.";
   // %s
+  // indicate that variable will contain multiple characters with '[]'
 
   printf("%f", decimalNumber / 2);
 
@@ -38,6 +40,7 @@ int main()
   printf("%f", sqrt(36) );
   printf("%f", ceil(36.6) );
   printf("%f", floor(36.6) );
+  printf("%f", abs(36.6) );
 
   printf("Hello world.\n");
   // end with \n to prevent a '%' to be printed as well at the end.
