@@ -77,6 +77,7 @@ int main()
   // string
   char name[20];
     // indicate the maximum number of input inside the []
+    // so that C knows how much memory this variable will require
   printf("Enter your name: ");
     // automatically adds a '\n' at the end of the string input, but allows whitespaces
   fgets(name, 20, stdin);
