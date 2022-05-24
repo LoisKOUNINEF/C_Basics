@@ -70,19 +70,19 @@ int main()
   // character
   char letter;
   printf("Enter your letter: ");
-  scanf("%c", &letter);
+  scanf(" %c", &letter);
   printf("Your letter is %c.\n", letter);
-    // problem here, not waiting for input
 
   // string
   char name[20];
     // indicate the maximum number of input inside the []
     // so that C knows how much memory this variable will require
   printf("Enter your name: ");
-    // automatically adds a '\n' at the end of the string input, but allows whitespaces
-  fgets(name, 20, stdin);
-  // scanf("%s", name); ==> will only return string before whitespace (i.e 'John Smith' will be 'John')
-  // doesnt need to write '&name' here
+    // automatically adds a '\n' at the end of the string input, but allows whitespaces :
+      // fgets(name, 20, stdin);
+  scanf("%s", name);
+    // ==> will only return string before whitespace (i.e 'John Smith' will be 'John')
+    // doesnt need to write '&name' here
   printf("Your name is %s.\n", name);
 
   printf("Hello world.\n");
