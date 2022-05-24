@@ -9,10 +9,13 @@ int main()
   // modifying with index
   luckyNumbers[2] = 6;
 
-  // code below will make program crash ==> exceeds allocated memory
-  // luckyNumbers[12] = 37;
+  // array length
+  size_t arrayLength = sizeof(luckyNumbers)/sizeof(luckyNumbers[0]);
+
   luckyNumbers[10] = 31;
-  printf("%d", luckyNumbers[10]);
+  printf("%d\n", luckyNumbers[10]);
+    // code below will make program crash ==> exceeds allocated memory
+  // luckyNumbers[12] = 37;
 
   return 0;
 }
