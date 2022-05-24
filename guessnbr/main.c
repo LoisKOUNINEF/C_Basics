@@ -3,13 +3,15 @@
 
 int main()
 {
-  int range = 50;
+  int range, guess;
   int secretNumber = rand() % range;
-  int guess;
   int tries = 0;
   int triesLeft = 5;
   int gameOver = 0;
   // char printTriesLeft = printf("You have %d tries left !\n", triesLeft - tries);
+
+  printf("Tell me how big I can get.\n");
+  scanf("%d", &range);
 
   printf("Guess me ! I'm between 0 and %d !\n", range);
   printf("You have %d tries left !\n", triesLeft - tries);
