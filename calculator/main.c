@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <stdio.h>
+#include <stdlib.h>
+
 // double calculator(double num1, double num2, char operator);
 
 int main()
@@ -16,28 +19,36 @@ int main()
   printf("Enter the second number :");
   scanf("%lf", &num2);
 
-  if(operator == '+') {
+  switch(operator) {
+    case '+' :
     printf("%f\n", num1 + num2);
-  }
-  else if (operator == '-') {
+    break;
+    case '-' :
     printf("%f\n", num1 - num2);
-  }
-  else if (operator == '*') {
+    break;
+    case '*' :
     printf("%f\n", num1 * num2);
-  }
-  else if(operator == '/') {
+    break;
+    case '/' :
     printf("%f\n", num1 / num2);
-  }
-  else {
+    break;
+    default:
     printf("Enter valid operation (+, -, *, /).\n");
-
+    break;
   }
+
 
   return 0;
 }
 
-// double calculator(double num1, double num2, char operator) {
-//   double result;
+// same with if else statements
+
+// int main()
+// {
+//   double num1;
+//   double num2;
+//   char operator;
+
 //   printf("Enter the first number :");
 //   scanf("%lf", &num1);
 //   printf("What operation ?");
@@ -46,20 +57,21 @@ int main()
 //   scanf("%lf", &num2);
 
 //   if(operator == '+') {
-//     result = num1 + num2;
+//     printf("%f\n", num1 + num2);
 //   }
 //   else if (operator == '-') {
-//     result = num1 - num2;
+//     printf("%f\n", num1 - num2);
 //   }
 //   else if (operator == '*') {
-//     result = num1 * num2;
+//     printf("%f\n", num1 * num2);
 //   }
 //   else if(operator == '/') {
-//     result = num1 / num2;
+//     printf("%f\n", num1 / num2);
 //   }
 //   else {
-//     printf("What operation ? (+, -, *, /)");
-//     scanf(" %c", &operator);
+//     printf("Enter valid operation (+, -, *, /).\n");
+
 //   }
-//   return result;
+
+//   return 0;
 // }
