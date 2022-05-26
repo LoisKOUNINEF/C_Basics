@@ -22,5 +22,20 @@ int main()
     printf("%d\n", numbersArray[ii]);
   }
 
+  // nested loop
+  int nums [4] [2] = {
+    {1, 2},
+    {3, 4},
+    {5, 6},
+    {7, 8}
+  };
+  int j, h;
+  for(j = 0; j < 4; j++) {
+    for(h = 0; h < 2; h++) {
+      printf("%d", nums[j][h]);
+    }
+    printf("\n");
+  }
+
   return 0;
 }
