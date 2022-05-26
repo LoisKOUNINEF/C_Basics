@@ -17,5 +17,18 @@ int main()
     // code below will make program crash ==> exceeds allocated memory
   // luckyNumbers[12] = 37;
 
+
+  // 2D Array
+
+  int nums [4] [2] = {
+    {1, 2},
+    {3, 4},
+    {5, 6},
+    {7, 8}
+  };
+  // nums[0][0] = 1; etc etc
+
+  printf("%d", nums[1][0]);
+
   return 0;
 }
