@@ -26,6 +26,8 @@ int main()
   printf("%s travelled %d days long before reaching %s.\n", heroName, daysGone / 2, place2);
   printf("%s expected no less, but nonetheless, %s was able to defeat him and burned %s to the ground before returning to his homeland %s.\n", nemesisName, heroName, place2, place1);
 
+
+// creating .txt file with this thrilling, original story
   FILE * fpointer = fopen("amazingstory.txt", "w");
 
   fprintf(fpointer, "\n\nA long time ago, %s lived in %s.\nOne day, %s came in %s and killed %s's family.\nAs a result, %s decided to go in %s for revenge.\n%s travelled %d days long before reaching %s.\n%s expected no less, but nonetheless, %s was able to defeat him and burned %s to the ground before returning to his homeland %s.\n", heroName, place1, nemesisName, place1, heroName, heroName, place2, heroName, daysGone / 2, place2, nemesisName, heroName, place2, place1);
