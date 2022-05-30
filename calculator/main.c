@@ -12,12 +12,15 @@ int main()
   double num2;
   char operator;
 
-  printf("Enter the first number :");
-  scanf("%lf", &num1);
-  printf("What operation ?");
-  scanf(" %c", &operator);
-  printf("Enter the second number :");
-  scanf("%lf", &num2);
+  // printf("Enter the first number :");
+  // scanf("%lf", &num1);
+  // printf("What operation ?");
+  // scanf(" %c", &operator);
+  // printf("Enter the second number :");
+  // scanf("%lf", &num2);
+
+  printf("Enter the first number, operation, and second number :");
+  scanf("%lf %c %lf", &num1, &operator, &num2);
 
   switch(operator) {
     case '+' :
