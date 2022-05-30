@@ -13,5 +13,12 @@ int main() {
   printf("age's memory address : %p\n", &age);
   printf("letter's memory address : %p\n", &letter);
 
+  printf("%p\n", pointerAge);
+  printf("%p\n", pointerLetter);
+
+  // dereferencing pointer
+  printf("%d\n", *pointerAge);
+  printf(" %c\n", *pointerLetter);
+
   return 0;
 }
