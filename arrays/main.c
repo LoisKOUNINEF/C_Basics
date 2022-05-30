@@ -28,7 +28,8 @@ int main()
   };
   // nums[0][0] = 1; etc etc
 
-  printf("%d", nums[1][0]);
+  printf("%d\n", nums[1][0]);
+  printf("%d\n", nums[2][1]);
 
   return 0;
 }
